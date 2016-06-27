@@ -16,7 +16,7 @@
                 (str (eval (read-string (slurp body))))
                 "Wrong auth token!"))
         (catch Exception e
-            "Wrong query string!"))
+            (str e)))
 )
 
 (defroutes repl-routes
